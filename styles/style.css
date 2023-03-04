@@ -4,8 +4,16 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+body {
+  height: 1200px;
+}
+
 .navbar {
   display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-list {
@@ -17,6 +25,7 @@
 .right-nav {
   width: 50%;
   text-align: right;
+  padding-right: 30px;
 }
 
 .logo {
@@ -67,7 +76,8 @@
   align-items: center;
   color: white;
   margin: auto;
-  max-width: 50%;
+  max-width: 60%;
+  height: 80%;
 }
 
 .first-section {
@@ -89,4 +99,26 @@
   margin: auto;
   border: 2px solid white;
   border-radius: 50%;
+}
+
+.text-big {
+  font-size: 45px;
+}
+.text-small {
+  font-size: 18px;
+}
+
+.button {
+  padding: 8px 20px;
+  margin: 8px 4px;
+  border: none;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-small {
+  padding: 6px 18px;
+  vertical-align: middle;
 }
