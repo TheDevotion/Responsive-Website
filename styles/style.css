@@ -5,9 +5,8 @@
 }
 
 body {
-  height: 1200px;
+  background-color: black;
 }
-
 .navbar {
   display: flex;
   position: sticky;
@@ -42,8 +41,6 @@ body {
   object-fit: cover;
 }
 
-.nav-list {
-}
 .nav-list li {
   list-style: none;
 }
@@ -121,4 +118,23 @@ body {
 .button-small {
   padding: 6px 20px;
   vertical-align: middle;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-box {
+  max-width: 80%;
+}
+
+.info-image img {
+  width: 50%;
+}
+.info-image {
+  height: 100%;
+}
+
+.info-section {
+  padding: 20px 0;
 }
