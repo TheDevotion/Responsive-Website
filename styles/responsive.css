@@ -1,0 +1,37 @@
+@media only screen and (max-width: 1111px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .navigation-items {
+    flex-direction: column;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+
+  .right-nav {
+    text-align: center;
+  }
+
+  #search {
+    width: 100%;
+    margin: auto;
+  }
+
+  .nav-list li {
+    padding: 20px 0;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .nav-height {
+    height: 80px;
+  }
+
+  .visibility {
+    visibility: hidden;
+  }
+}

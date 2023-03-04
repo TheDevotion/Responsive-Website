@@ -7,25 +7,35 @@
     <title>Responsive Website</title>
 
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar  darken-bg">
-      <ul class="nav-list">
+    <nav class="navbar  darken-bg nav-height">
+      <ul class="nav-list visibility">
         <div class="logo">
           <img src="images/simpleLogo.png" alt="logo" />
         </div>
-        <li><a href="#home">Home</a></li>
+        <div class="navigation-items">
+          <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
+
+        </div>
+        
       </ul>
-      <div class="right-nav">
+      <div class="right-nav visibility">
         <input type="text" name="search" id="search" placeholder = "Search" />
         <button class="button button-small" >Search</button>
+      </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
     </nav>
 
@@ -52,7 +62,8 @@
           </div>
         </div>
       </section>
-  
+      
+      <hr>
       <!-- info sections 
       
       -->
@@ -126,9 +137,13 @@
           <button class="button">Submit</button>
         </div>
       </section>
-
-
     </main>
-    
+    <footer class = "darken-bg">
+
+      <p class = "copyright">
+        Copyright &copy; 2023 YoutubeShorts.com - All rights reserved.
+
+      </p>
+    </footer>
   </body>
 </html>

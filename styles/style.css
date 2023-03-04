@@ -12,10 +12,15 @@ body {
 }
 
 .main-section {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
+}
+.darken-bg {
+  background: rgba(0, 0, 0, 0.9) url("../images/background.jpg");
+  background-blend-mode: darken;
+  background-size: cover;
 }
 .navbar {
   display: flex;
@@ -26,15 +31,15 @@ body {
 }
 
 .nav-list {
-  width: 50%;
+  width: 70%;
   display: flex;
   align-items: center;
 }
 
 .right-nav {
-  width: 50%;
+  width: 30%;
   text-align: right;
-  padding-right: 10%;
+  padding-right: 2vw;
 }
 
 .logo {
@@ -45,26 +50,34 @@ body {
 }
 
 .logo img {
-  width: 40%;
+  width: 80px;
   border: 2px solid white;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.nav-list li {
+.navigation-items {
+  padding-left: 0px;
+  margin-left: 0px;
+  display: flex;
+}
+
+.navigation-items li {
   list-style: none;
+  padding: 40px 30px;
+  font-size: 20px;
 }
 .nav-list li a {
   text-decoration: none;
   color: white;
-  padding: 0px 55px;
+  padding: 30px 30px;
 }
-.nav-list a:hover {
+.navigation-items a:hover {
   color: gray;
 }
 
 #search {
-  padding: 4px 20px;
+  padding: 4px 16px;
   font-size: 17px;
   border: none;
   background: transparent;
@@ -72,12 +85,6 @@ body {
   border-radius: 5px;
   vertical-align: middle;
   color: white;
-}
-
-.darken-bg {
-  background: rgba(0, 0, 0, 0.8) url("../images/background.jpg");
-  background-blend-mode: darken;
-  background-size: cover;
 }
 
 .box-main {
@@ -129,6 +136,18 @@ body {
   border: 2px solid white;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.15s, color 0.8s, ease-in;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 10px rgba(12, 249, 71, 0.8);
+}
+
+.button:active {
+  box-shadow: none;
+  background-color: rgb(210, 206, 206);
 }
 .button-small {
   padding: 6px 20px;
@@ -190,4 +209,31 @@ input::placeholder {
   color: white;
   padding: 20px 0;
   margin-bottom: 20px;
+}
+
+footer {
+  color: white;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 20px;
+}
+
+.burger {
+  position: absolute;
+  right: 5%;
+  top: 28.5px;
+  display: none;
+}
+
+.line {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 5px 3px;
+  border-radius: 5px;
 }
