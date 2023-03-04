@@ -5,7 +5,17 @@
 }
 
 body {
-  background-color: black;
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.main-section {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
 }
 .navbar {
   display: flex;
@@ -24,7 +34,7 @@ body {
 .right-nav {
   width: 50%;
   text-align: right;
-  padding-right: 30px;
+  padding-right: 10%;
 }
 
 .logo {
@@ -54,17 +64,20 @@ body {
 }
 
 #search {
-  padding: 4px;
+  padding: 4px 20px;
   font-size: 17px;
   border: none;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  background: transparent;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
   border-radius: 5px;
+  vertical-align: middle;
+  color: white;
 }
 
-.background {
-  background: rgba(0, 0, 0, 0.7) url("../images/background.jpg");
-  background-size: cover;
+.darken-bg {
+  background: rgba(0, 0, 0, 0.8) url("../images/background.jpg");
   background-blend-mode: darken;
+  background-size: cover;
 }
 
 .box-main {
@@ -121,6 +134,9 @@ body {
   padding: 6px 20px;
   vertical-align: middle;
 }
+.form button {
+  margin-top: 40px;
+}
 
 .reverse {
   flex-direction: row-reverse;
@@ -141,4 +157,37 @@ body {
 
 .info-section {
   padding: 40px 0;
+}
+
+.contact-section {
+  text-align: center;
+}
+.form {
+  max-width: 500px;
+  margin: 40px auto;
+}
+.form input,
+textarea {
+  font-size: 18px;
+  margin: 20px 0;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  color: white;
+}
+
+.form textarea,
+input::placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-us-text {
+  font-size: 40px;
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 20px;
 }
