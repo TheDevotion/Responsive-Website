@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +13,10 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+section {
+  scroll-margin-top: 100px;
 }
 
 .main-section {
@@ -119,12 +127,12 @@ body {
 }
 
 .text-big {
-  font-size: 45px;
+  font-size: 40px;
   font-weight: bold;
   padding: 6px 0;
 }
 .text-small {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .button {
@@ -180,10 +188,13 @@ body {
 
 .contact-section {
   text-align: center;
+  height: 100%;
 }
 .form {
   max-width: 500px;
   margin: 40px auto;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
 }
 .form input,
 textarea {
@@ -200,8 +211,12 @@ textarea {
 
 .form textarea,
 input::placeholder {
-  font-size: 15px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.form textarea {
+  color: white;
 }
 
 .contact-us-text {
@@ -212,7 +227,7 @@ input::placeholder {
 }
 
 footer {
-  color: white;
+  color: rgba(255, 255, 255, 0.76);
   height: 10vh;
   display: flex;
   justify-content: center;

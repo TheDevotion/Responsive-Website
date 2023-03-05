@@ -10,15 +10,17 @@
     flex-direction: column;
     height: 450px;
     transition: all 0.3s ease-out;
+    text-align: center;
   }
 
   .right-nav {
     text-align: center;
+    padding-right: 0vw;
+    width: 100%;
   }
 
   #search {
-    width: 100%;
-    margin: auto;
+    width: 50%;
   }
 
   .nav-list li {
@@ -35,5 +37,28 @@
 
   .visibility {
     visibility: hidden;
+  }
+
+  .box-main {
+    flex-direction: column-reverse;
+    max-width: 100%;
+  }
+
+  .form {
+    max-width: 75%;
+  }
+
+  .button-small {
+    padding: 5px 12px;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  .navbar {
+    height: 90%;
+  }
+
+  .nav-height {
+    height: 80px;
   }
 }
