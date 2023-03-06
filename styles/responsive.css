@@ -66,6 +66,9 @@
   .text-big {
     margin: 5px auto;
   }
+  .hero-section-image {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-height: 400px) {
