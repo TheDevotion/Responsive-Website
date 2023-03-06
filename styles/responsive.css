@@ -51,6 +51,21 @@
   .button-small {
     padding: 5px 12px;
   }
+
+  .info-image img {
+    width: 10rem;
+    margin: auto;
+  }
+  .second-half {
+    width: 100%;
+  }
+
+  .second-half img {
+    width: 50%;
+  }
+  .text-big {
+    margin: 5px auto;
+  }
 }
 
 @media only screen and (max-height: 400px) {
