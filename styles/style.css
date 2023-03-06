@@ -144,7 +144,7 @@ section {
   border: 2px solid white;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.15s, color 0.8s, ease-in;
+  transition: background-color 0.4s, color 0.4s ease-in;
 }
 
 .button:hover {
@@ -192,15 +192,15 @@ section {
 }
 .form {
   max-width: 500px;
-  margin: 40px auto;
+  margin: 10px auto;
   margin-bottom: 0px;
   padding-bottom: 5px;
 }
 .form input,
 textarea {
   font-size: 18px;
-  margin: 20px 0;
-  width: 100%;
+  margin: 15px 0;
+  width: 94%;
   padding: 8px;
   border-radius: 5px;
   border: none;
@@ -223,7 +223,7 @@ input::placeholder {
   font-size: 40px;
   color: white;
   padding: 20px 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 footer {
